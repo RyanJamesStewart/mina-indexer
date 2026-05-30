@@ -142,6 +142,9 @@ test_indexer_cli_reports() {
 	idxr blocks children --help 2>&1 |
 		grep -iq "Usage: mina-indexer blocks children"
 
+	idxr blocks compare --help 2>&1 |
+		grep -iq "Usage: mina-indexer blocks compare"
+
 	idxr ledgers --help 2>&1 |
 		grep -iq "Usage: mina-indexer ledgers"
 
