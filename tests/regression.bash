@@ -143,7 +143,7 @@ test_indexer_cli_reports() {
 		grep -iq "Usage: mina-indexer blocks children"
 
 	idxr blocks compare --help 2>&1 |
-		grep -iq "Usage: mina-indexer blocks compare"
+		grep -iqF "Usage: mina-indexer blocks compare [OPTIONS] --state-hash <STATE_HASH> --other-state-hash <OTHER_STATE_HASH>"
 
 	idxr ledgers --help 2>&1 |
 		grep -iq "Usage: mina-indexer ledgers"
